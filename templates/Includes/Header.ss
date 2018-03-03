@@ -39,7 +39,9 @@
 						$SearchForm
 					</div>
 				<% end_if %>
-				<div class="row align-items-end"><% include Navigation %></div>
+				<div class="row align-items-end">
+					<% include Navigation %>
+				</div>
 			</div>
 		</div>
 	</div>
