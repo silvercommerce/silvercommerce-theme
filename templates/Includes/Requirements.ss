@@ -1,5 +1,5 @@
 <%-- CSS Imports --%>
-<% require themedCSS('layout.min') %>
+<% require themedCSS('layout') %>
 
 <%-- JavaScript Imports --%>
 <% require javascript("themes/silvercommerce/node_modules/jquery/dist/jquery.min.js") %>
