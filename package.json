@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap",
+  "name": "silvercommerce",
   "version": "1.0.0",
-  "description": "SilverStripe Theme using Bootstrap 4",
+  "description": "SilverStripe Theme for SilverCommerce using Bootstrap 4",
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.4",
     "bootstrap": "^4.0.0",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/i-lateral/silverstripe-bootstrap-4.git"
+    "url": "git+https://github.com/silvercommerce/silvercommerce-theme.git"
   },
   "license": "BSD 3-Clause",
   "bugs": {
-    "url": "https://github.com/i-lateral/silverstripe-bootstrap-4/issues"
+    "url": "https://github.com/silvercommerce/silvercommerce-theme/issues"
   },
-  "homepage": "https://github.com/i-lateral/silverstripe-bootstrap-4#readme"
+  "homepage": "https://github.com/silvercommerce/silvercommerce-theme"
 }
