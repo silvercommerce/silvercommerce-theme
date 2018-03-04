@@ -29,14 +29,18 @@
                     <strong class="col text-right"><%t ShoppingCart.Total "Total" %>: {$Total.Nice}</strong>
                 </span>
             <% else %>
-                <strong>
-                    <%t ShoppingCart.CartIsEmpty 'Your cart is currently empty' %>
-                </strong
+                <span class="row">
+                    <strong class="col">
+                        <%t ShoppingCart.CartIsEmpty 'Your cart is currently empty' %>
+                    </strong>
+                </span>
             <% end_if %>
         </span>
 
-        <a class="btn btn-primary btn-block cart-btn" href="{$Up.Link}">
-            <%t ShoppingCart.ViewCart "View Cart" %>
-        </a>	
+        <% if $TotalItems > 0 %>
+            <a class="btn btn-primary btn-block cart-btn" href="{$Up.Link}">
+                <%t ShoppingCart.ViewCart "View Cart" %>
+            </a>
+        <% end_if %>
     </span>
 <% end_with %>
