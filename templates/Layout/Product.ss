@@ -50,7 +50,7 @@
 				<p>$Content.FirstParagraph</p>
 			</article>
 
-			$Form
+			$AddToCartForm
 		</div>
 	</div>
 
