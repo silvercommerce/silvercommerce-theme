@@ -1,34 +1,42 @@
-<a id="cart-button" href="$Link" data-toggle="dropdown" data-target="#" role="button" aria-haspopup="true" aria-expanded="false">
-    <i class="fa fa-shopping-basket fa-lg"></i><span class="hidden-xs">&nbsp; {$TotalCost.Nice}</span>
-    <span class="caret hidden-xs"></span>
-    <% if $Items.Exists %><span class="item-counter visible-xs-block">$Items.Count</span><% end_if %>
-</a>
-<div id="cart-summary" class="cart-summary dropdown-menu" aria-labelledby="cart-button">
-    <% if $Items.Exists %>
-        <div>
-            <% loop $Items %>
-                <div class="row">
-                    <div class="col-xs-9">
-                        <p>$Title</p>
-                    </div>
-                    <div class="col-xs-3">
-                         <p>$Quantity x $Price.Nice</p>
-                    </div>
-                </div>
-            <% end_loop %>
-            <p class="lead text-center">
-                Total: &nbsp;
-                <strong>{$TotalCost.Nice}</strong>
-            </p>
-        </div>
-    <% else %>
-        <p>
-            <strong>
-                <%t Checkout.CartIsEmpty 'Your cart is currently empty' %>
-            </strong>
-        </p>
-    <% end_if %>
-    <p class="cart-btn"><a class="btn btn-default btn-block" href="$Link">
-        <%t Checkout.ViewCart "View Cart" %>
-    </a></p>	
-</div>
+<%-- Add the view cart button --%>
+<% with $Estimate %>
+    <a id="view-shoppingcart-button" class="shoppingcart-link nav-link" href="{$Up.Link}" data-toggle="dropdown" data-target="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-shopping-basket fa-lg"></i>
+        <span class="hidden-xs">&nbsp;{$Total.Nice}</span>
+        <span class="caret hidden-xs"></span>
+    </a>
+
+    <%-- Cart summary dropdown --%>
+    <span id="shoppingcart-summary" class="shoppingcart-summary dropdown-menu" aria-labelledby="view-shoppingcart-button">
+        <span class="shoppingcart-items">
+            <% if $TotalItems > 0 %>
+                <% loop $Items %>
+                    <span class="row">
+                        <span class="col">
+                            {$Quantity} x
+                            <% if $FindStockItem %>
+                                <a href="{$FindStockItem.Link}">$Title</a>
+                            <% else %>
+                                {$Title}
+                            <% end_if %>
+                        </span>
+                        <span class="col text-right">
+                            {$Total.Nice}
+                        </span>
+                    </span>
+                <% end_loop %>
+                <span class="row">
+                    <strong class="col text-right"><%t ShoppingCart.Total "Total" %>: {$Total.Nice}</strong>
+                </span>
+            <% else %>
+                <strong>
+                    <%t ShoppingCart.CartIsEmpty 'Your cart is currently empty' %>
+                </strong
+            <% end_if %>
+        </span>
+
+        <a class="btn btn-primary btn-block cart-btn" href="{$Up.Link}">
+            <%t ShoppingCart.ViewCart "View Cart" %>
+        </a>	
+    </span>
+<% end_with %>

@@ -6330,6 +6330,23 @@ footer {
 .gallery-modal {
   z-index: 9999 !important; }
 
+/**
+ * GLOBAL COMMERCE STYLES
+ *
+ */
+.shoppingcart-button .shoppingcart-summary {
+  left: auto;
+  right: 0;
+  min-width: 30rem;
+  padding: 0; }
+  .shoppingcart-button .shoppingcart-summary .shoppingcart-items {
+    padding: 30px; }
+    .shoppingcart-button .shoppingcart-summary .shoppingcart-items .row {
+      margin-left: 0;
+      margin-right: 0; }
+    .shoppingcart-button .shoppingcart-summary .shoppingcart-items a {
+      color: #495560; }
+
 .commerce-product .product-images {
   position: relative; }
   .commerce-product .product-images .preloader {

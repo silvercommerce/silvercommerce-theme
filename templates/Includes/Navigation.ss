@@ -13,7 +13,7 @@
                 </li>
             <% end_loop %>
 
-            <li class="dropdown hidden-xs">
+            <li class="dropdown hidden-xs nav-item shoppingcart-button">
                 <% with $ShoppingCart %>
                     <% include ViewCartButton %>
                 <% end_with %>
