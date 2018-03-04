@@ -6363,6 +6363,11 @@ footer {
     .commerce-product .product-images .product-thumbs img {
       cursor: pointer; }
 
+.commerce-product #AddToCartForm_AddToCartForm #AddToCartForm_AddToCartForm_Quantity_Holder {
+  margin-bottom: 0; }
+  .commerce-product #AddToCartForm_AddToCartForm #AddToCartForm_AddToCartForm_Quantity_Holder label {
+    display: none; }
+
 /***************************************
     PAGE STYLES
 ****************************************/
