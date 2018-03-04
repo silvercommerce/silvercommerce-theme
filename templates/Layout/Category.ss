@@ -1,3 +1,5 @@
+<% include Banner %>
+
 <div class="row commerce-category">
 	<% if $Menu(2) || $SideBarView.Widgets %>
 		<aside class="col-sm col-md-3" role="complementary">

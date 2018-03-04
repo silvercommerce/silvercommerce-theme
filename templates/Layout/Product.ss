@@ -1,3 +1,5 @@
+<% include Banner %>
+
 <div class="commerce-product">
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 product-images">
@@ -55,7 +57,7 @@
 	</div>
 
 	<div class="row product-description">
-		<div class="col-xs-12">
+		<div class="col">
 			<h2><%t CatalogueFrontend.Descriptiion "Description" %></h2>
 			<div class="content">$Content</div>
 		</div>
@@ -64,7 +66,7 @@
 	<%-- Related Products: Only loaded when added through the CMS --%>
 	<% if $SortedRelatedProducts.exists %>
 		<div class="row product-related">
-			<div class="col-xs-12">
+			<div class="col">
 				<h2><%t CatalogueFrontend.RelatedProducts "Related Products" %></h2>
 
 				<div class="row">
