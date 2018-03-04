@@ -15,6 +15,10 @@
 
         .product-thumbs {
             margin-top: $grid-gutter-width/2;
+
+            img {
+                cursor: pointer;
+            }
         }
     }
 }

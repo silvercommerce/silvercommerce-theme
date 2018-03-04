@@ -6343,6 +6343,8 @@ footer {
     background-color: rgba(255, 255, 255, 0.5); }
   .commerce-product .product-images .product-thumbs {
     margin-top: 15px; }
+    .commerce-product .product-images .product-thumbs img {
+      cursor: pointer; }
 
 /***************************************
     PAGE STYLES
