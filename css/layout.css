@@ -9289,25 +9289,28 @@ hr {
 ****************************************/
 header {
   background: #000;
-  padding-top: 7.5px;
   padding-bottom: 7.5px;
   color: #fff;
-  border-top: 7px solid #ebeef0;
+  border-top: none;
 }
 
 header a {
   color: #fff;
 }
 
+header .sub-header {
+  background: #ebeef0;
+}
+
 @media (min-width: 576px) {
-  header .navbar {
+  header .navbar-main {
     padding-bottom: 0;
     position: absolute;
     bottom: -6px;
     right: 0;
     z-index: 9;
   }
-  header .navbar li.active {
+  header .navbar-main li.active {
     border-bottom: 5px solid #ebeef0;
   }
 }
@@ -9324,6 +9327,18 @@ header .bottom-bar {
   left: 0;
   right: 0;
   border-bottom: 7px solid #ced4da;
+}
+
+header .cart-link {
+  position: relative;
+}
+
+header .cart-link .item-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
 }
 
 /***************************************

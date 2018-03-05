@@ -3,17 +3,19 @@
 ****************************************/
 header {
     background: $header-background;
-    padding-top: $grid-gutter-width/4;
     padding-bottom: $grid-gutter-width/4;
     color: $header-colour;
-    border-top: 7px solid $header-top-border-colour;
+    border-top: none;
     a {
         color: $white;      
     }
+    .sub-header {
+        background: $header-top-border-colour;
+    }
 
     @include media-breakpoint-up(sm) {
-        .navbar {
-            padding-bottom: 0;
+        .navbar-main {
+            padding-bottom: 0; 
             position: absolute;
             bottom: -6px;
             right: 0;
@@ -37,5 +39,17 @@ header {
         left: 0;
         right: 0;
         border-bottom: 7px solid $header-bottom-border-colour;
+    }
+
+    .cart-link {
+        position: relative;
+        .item-count {
+            position: absolute;
+            top: 0;
+            right: 0;
+            -webkit-transform: translate(50%, -50%);
+                -ms-transform: translate(50%, -50%); 
+                    transform: translate(50%, -50%);
+        }
     }
 }
