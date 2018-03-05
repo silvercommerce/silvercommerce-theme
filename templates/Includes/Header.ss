@@ -1,4 +1,4 @@
-<header class="fixed-top" role="banner">
+<header class="sticky-top" role="banner">
 	<div class="container">
 		<div class="row  align-items-stretch">
 			<div class="col-sm col-sm-auto">
@@ -35,7 +35,7 @@
                     </ul>
                 <% end_with %>
 				<% if $SearchForm %>
-					<div class="search-bar">
+					<div id="SearchBar" class="search-bar collapse">
 						$SearchForm
 					</div>
 				<% end_if %>

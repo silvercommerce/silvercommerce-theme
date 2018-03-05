@@ -31,14 +31,6 @@ header {
             padding: 0;
         }
     }
-    .navbar-toggler {
-        position: absolute;
-        left: $grid-gutter-width/2;
-        top: 0;
-        -webkit-transform: translateY(-100%);
-            -ms-transform: translateY(-100%);
-                transform: translateY(-100%);
-    }
     .bottom-bar {
         position: absolute;
         bottom: 0;
