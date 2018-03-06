@@ -1,7 +1,7 @@
 <div class="sub-header mb-3">
     <div class="container px-lg-0">
         <nav class="navbar navbar-expand-lg navbar-dark py-0 px-lg-0">
-            <ul class="navbar-nav mr-sm-auto">
+            <ul class="navbar-nav mx-auto ml-lg-0">
                 $SiteConfig.ContactPage.ID
                 <% if $SiteConfig.ContactPage %>
                     <% with $SiteConfig.ContactPage %>
