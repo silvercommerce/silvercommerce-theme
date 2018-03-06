@@ -2,11 +2,10 @@
     <div class="container px-lg-0">
         <nav class="navbar navbar-expand-lg navbar-dark py-0 px-lg-0">
             <ul class="navbar-nav mx-auto ml-lg-0">
-                $SiteConfig.ContactPage.ID
                 <% if $SiteConfig.ContactPage %>
                     <% with $SiteConfig.ContactPage %>
                         <% if $PhoneNumber %>
-                            <li class="nav-item">
+                            <li class="nav-item small">
                                 <a class="nav-link" href="tel:{$PhoneNumber}" rel="nofollow">
                                     <span class="d-block d-sm-none"><i class="fas fa-phone"></i></span>
                                     <span class="d-none d-sm-block">$PhoneNumber</span>
@@ -14,7 +13,7 @@
                             </li>
                         <% end_if %>
                         <% if $Email %>
-                            <li class="nav-item">
+                            <li class="nav-item small">
                                 <a class="nav-link" href="mailto:{$Email}" rel="nofollow">
                                     <span class="d-block d-sm-none"><i class="fas fa-envelope"></i></span>
                                     <span class="d-none d-sm-block">$Email</span>
@@ -42,9 +41,8 @@
             </ul>
 
             <div class="collapse navbar-collapse" id="UserNav">
-                <ul class="navbar-nav ml-sm-auto">
-        
-                        <% if $CurrentMember %>
+                <ul class="navbar-nav ml-sm-auto small">
+                    <% if $CurrentMember %>
                         <li class="details nav-item">
                             <span class="navbar-text">
                                 <% _t("Users.HELLO", "Hi") %>
