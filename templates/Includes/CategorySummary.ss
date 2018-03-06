@@ -1,13 +1,13 @@
 <div class="category-summary card">
-    <% if $Image && $Image.exists %>
-        <a href="{$Link}">
+    <% with $PrimaryImage %>
+        <a href="{$Up.Link}">
             <img
                 class="img-fluid category-img"
-                src="$Image.Fill(400,400).Link"
-                alt="$Image.Title"
+                src="$Fill(400,400).Link"
+                alt="$Title"
             >
         </a>
-    <% end_if %>
+    <% end_with %>
 
     <div class="card-body">
         <p class="h4 category-title">

@@ -1,5 +1,5 @@
 <div class="product-summary card">
-    <% with $SortedImages.First %>
+    <% with $PrimaryImage %>
         <a href="{$Top.Link}">
             <img
                 class="img-fluid product-img"
