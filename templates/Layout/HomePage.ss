@@ -13,9 +13,9 @@
         <h2 class="text-center">
             <%t CatalogueFrontEnd.FeaturedProducts "Featured Products" %>
         </h2>
-        <div class="row mt-4 mb-4">
+        <div class="row mt-4">
             <% loop $FeaturedProducts %>
-                <div class="col-sm-4 col-lg-3">
+                <div class="col-sm-4 col-lg-3 mb-4">
                     <% include ProductSummary %>
                 </div>
             <% end_loop %>
@@ -26,10 +26,10 @@
         <h2 class="text-center">
             <%t CatalogueFrontEnd.FeaturedCategories "Featured Categories" %>
         </h2>
-        <div class="row">
+        <div class="row mt-4">
             <% loop $FeaturedCategories %>
-                <div class="col-sm">
-                    <h2>$Title</h2>
+                <div class="col-sm-4 col-lg-3 mb-4">
+                    <% include CategorySummary %>
                 </div>
             <% end_loop %>
         </div>

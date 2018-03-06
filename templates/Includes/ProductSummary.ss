@@ -3,7 +3,7 @@
         <a href="{$Top.Link}">
             <img
                 class="img-fluid product-img"
-                src="$Fill(400,400).Link"
+                src="$Pad(400,400).Link"
                 alt="$Title"
             >
         </a>
