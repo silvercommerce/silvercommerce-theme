@@ -2,6 +2,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-sm navbar-dark py-0">
             <ul class="navbar-nav mr-sm-auto">
+                $SiteConfig.ContactPage.ID
                 <% if $SiteConfig.ContactPage %>
                     <% with $SiteConfig.ContactPage %>
                         <% if $PhoneNumber %>
@@ -45,8 +46,11 @@
         
                         <% if $CurrentMember %>
                         <li class="details nav-item">
-                            <% _t("Users.HELLO", "Hi") %>
-                            $CurrentMember.FirstName</li>
+                            <span class="navbar-text">
+                                <% _t("Users.HELLO", "Hi") %>
+                                $CurrentMember.FirstName
+                            </span>
+                        </li>
                         <li class="account nav-item">
                             <a class="nav-link" href="{$BaseHref}users/account">
                                 <% _t("Users.MYACCOUNT", "My account") %>

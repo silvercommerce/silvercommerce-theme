@@ -36,8 +36,8 @@
                     </ul>
                 <% end_with %>
 				<% if $SearchForm %>
-					<div id="SearchBar" class="search-bar navbar-collapse">
-						$SearchForm
+					<div class="search-bar navbar navbar-expand-sm">
+						<div id="SearchBar" class="collapse navbar-collapse">$SearchForm</div>
 					</div>
 				<% end_if %>
 				<div class="row align-items-end">
