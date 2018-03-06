@@ -9302,7 +9302,7 @@ header .sub-header {
   background: #ebeef0;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 992px) {
   header .navbar-main {
     padding-bottom: 0;
     position: absolute;

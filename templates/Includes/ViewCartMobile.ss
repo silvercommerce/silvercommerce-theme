@@ -1,6 +1,6 @@
 <%-- Add the view cart button --%>
 <% with $Estimate %>
-    <a class="navbar-toggler mx-sm-auto cart-link" href="{$Up.Link}" role="button">
+    <a class="navbar-toggler mx-auto mx-sm-2 cart-link" href="{$Up.Link}" role="button">
         <i class="fas fa-shopping-basket fa-lg"></i>
         <% if $TotalItems > 0 %>
             <span class="item-count">

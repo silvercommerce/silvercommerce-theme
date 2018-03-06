@@ -1,16 +1,16 @@
-<nav class="col navbar navbar-expand-md navbar-light navbar-main">
-    <button class="navbar-toggler mx-sm-auto" type="button" data-toggle="collapse" data-target="#MainNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="col navbar navbar-expand-lg navbar-light navbar-main">
+    <button class="navbar-toggler mx-auto  ml-sm-auto mr-sm-2" type="button" data-toggle="collapse" data-target="#MainNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <% if $SearchForm %>
-        <button class="navbar-toggler mx-sm-auto" type="button" data-toggle="collapse" data-target="#SearchBar" aria-controls="SearchBar" aria-expanded="false" aria-label="Toggle search">
+        <button class="navbar-toggler mx-auto mx-sm-2" type="button" data-toggle="collapse" data-target="#SearchBar" aria-controls="SearchBar" aria-expanded="false" aria-label="Toggle search">
             <i class="fas fa-lg fa-search"></i>
         </button>
     <% end_if %>
     <% with $ShoppingCart %>
         <% include ViewCartMobile %>
     <% end_with %>
-    <button class="navbar-toggler mx-sm-auto" type="button" data-toggle="collapse" data-target="#UserNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler mx-auto mx-sm-2" type="button" data-toggle="collapse" data-target="#UserNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-lg fa-user"></i>
     </button>
 

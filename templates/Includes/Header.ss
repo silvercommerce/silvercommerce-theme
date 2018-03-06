@@ -1,6 +1,6 @@
 <header class="sticky-top" role="banner">
 	<% include SubHeader %>
-	<div class="container">
+	<div class="container px-md-0">
 		<div class="row align-items-stretch">
 			<div class="col-sm col-sm-auto">
 				<h1>				
@@ -36,7 +36,7 @@
                     </ul>
                 <% end_with %>
 				<% if $SearchForm %>
-					<div class="search-bar navbar navbar-expand-sm">
+					<div class="search-bar navbar navbar-expand-lg">
 						<div id="SearchBar" class="collapse navbar-collapse">$SearchForm</div>
 					</div>
 				<% end_if %>
