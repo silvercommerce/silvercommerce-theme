@@ -1,6 +1,6 @@
 <div class="sub-header mb-3">
-    <div class="container">
-        <nav class="navbar navbar-expand-sm navbar-dark py-0">
+    <div class="container px-md-0">
+        <nav class="navbar navbar-expand-lg navbar-dark py-0">
             <ul class="navbar-nav mr-sm-auto">
                 $SiteConfig.ContactPage.ID
                 <% if $SiteConfig.ContactPage %>

@@ -13,7 +13,7 @@ header {
         background: $header-top-border-colour;
     }
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(lg) {
         .navbar-main {
             padding-bottom: 0; 
             position: absolute;
@@ -27,7 +27,7 @@ header {
             }
         }
     }
-
+ 
     @include media-breakpoint-up(md) {
         .container {
             padding: 0;
