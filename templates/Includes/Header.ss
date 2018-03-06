@@ -36,8 +36,12 @@
                     </ul>
                 <% end_with %>
 				<% if $SearchForm %>
-					<div class="search-bar navbar navbar-expand-lg">
-						<div id="SearchBar" class="collapse navbar-collapse">$SearchForm</div>
+					<div class="search-bar navbar navbar-expand-lg px-0">
+						<div id="SearchBar" class="collapse navbar-collapse">
+							<div class="mx-auto mr-lg-0">
+								$SearchForm
+							</div>
+						</div>
 					</div>
 				<% end_if %>
 				<div class="row align-items-end">
