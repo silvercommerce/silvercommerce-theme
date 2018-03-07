@@ -2,7 +2,7 @@
 
 <div class="col-md-6 commerce-product">
 	<div class="product-images">
-		<% with $ProductImage %>
+		<% with $PrimaryImage %>
 			<div class="preloader" style="">
 				<i class="fa fa-circle-notch fa-3x fa-spin"></i>
 			</div>

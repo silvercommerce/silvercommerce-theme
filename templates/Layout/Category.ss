@@ -12,7 +12,7 @@
 	<% if $PaginatedAllProducts(24).exists %>
 		<div class="row">
 			<% loop $PaginatedAllProducts(24) %>
-				<div class="col-sm-4 catalogue-list-child">
+				<div class="col-sm-6 col-lg-3 mb-4 catalogue-list-child">
 					<% include ProductSummary %>
 				</div>
 
