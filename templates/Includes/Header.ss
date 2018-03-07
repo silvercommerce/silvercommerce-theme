@@ -1,6 +1,6 @@
 <header class="sticky-top" role="banner">
 	<% include SubHeader %>
-	<div class="container px-md-0">
+	<div class="container px-lg-0">
 		<div class="row align-items-stretch">
 			<div class="col-7 col-sm-6 col-md-4 col-lg-auto">
 				<h1>				
