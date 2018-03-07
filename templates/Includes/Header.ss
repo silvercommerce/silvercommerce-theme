@@ -32,13 +32,30 @@
 						<i class="fas fa-search"></i>
 					</button>
 				<% end_if %>
+<<<<<<< HEAD
 				<button class="navbar-toggler my-1 mx-auto mx-sm-2" type="button" data-toggle="collapse" data-target="#UserNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fas fa-user"></i>
 				</button>
+=======
+				<% with $SiteConfig.ContactPage %>
+                    <ul class="nav justify-content-end d-none d-sm-block d-lg-none">
+                        <% if $PhoneNumber %>
+                            <li class="nav-item">
+                                <span class="nav-link">$PhoneNumber</span>
+                            </li>
+                        <% end_if %>
+                        <% if $Email %>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:$Email">$Email</a>
+                            </li>
+                        <% end_if %>
+                    </ul>
+                <% end_with %>
+>>>>>>> base/master
 			</div>
 			<div class="col-lg <% if $SearchForm %>searchform-enabled<% end_if %>">
 				<% with $SiteConfig.ContactPage %>
-                    <ul class="nav justify-content-end">
+                    <ul class="nav justify-content-end d-sm-none d-lg-flex">
                         <% if $PhoneNumber %>
                             <li class="nav-item">
                                 <span class="nav-link">$PhoneNumber</span>
