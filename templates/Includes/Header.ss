@@ -35,10 +35,6 @@
 				<button class="navbar-toggler my-1 mx-auto mx-sm-2" type="button" data-toggle="collapse" data-target="#UserNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="fas fa-user"></i>
 				</button>
-
-				<button class="navbar-toggler my-1 mx-auto mx-sm-2" type="button" data-toggle="collapse" data-target="#UserNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
-					<i class="fas fa-user"></i>
-				</button>
 			</div>
 			<div class="col-lg <% if $SearchForm %>searchform-enabled<% end_if %>">
 				<% with $SiteConfig.ContactPage %>
