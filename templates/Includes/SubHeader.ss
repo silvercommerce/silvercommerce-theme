@@ -2,26 +2,24 @@
     <div class="container px-lg-0">
         <nav class="navbar navbar-expand-lg navbar-dark py-0 px-lg-0">
             <ul class="navbar-nav mx-auto ml-lg-0">
-                <% if $SiteConfig.ContactPage %>
-                    <% with $SiteConfig.ContactPage %>
-                        <% if $PhoneNumber %>
-                            <li class="nav-item small">
-                                <a class="nav-link" href="tel:{$PhoneNumber}" rel="nofollow">
-                                    <span class="d-block d-sm-none"><i class="fas fa-phone"></i></span>
-                                    <span class="d-none d-sm-block">$PhoneNumber</span>
-                                </a>
-                            </li>
-                        <% end_if %>
-                        <% if $Email %>
-                            <li class="nav-item small">
-                                <a class="nav-link" href="mailto:{$Email}" rel="nofollow">
-                                    <span class="d-block d-sm-none"><i class="fas fa-envelope"></i></span>
-                                    <span class="d-none d-sm-block">$Email</span>
-                                </a>
-                            </li>
-                        <% end_if %>
-                    <% end_with %>
-                <% end_if %>
+                <% with $SiteConfig %>
+                    <% if $ContactPhone %>
+                        <li class="nav-item small">
+                            <a class="nav-link" href="tel:{$TrimmedContactPhone}" rel="nofollow">
+                                <span class="d-block d-sm-none"><i class="fas fa-phone"></i></span>
+                                <span class="d-none d-sm-block">$ContactPhone</span>
+                            </a>
+                        </li>
+                    <% end_if %>
+                    <% if $ContactEmail %>
+                        <li class="nav-item small">
+                            <a class="nav-link" href="mailto:{$ContactEmail}" rel="nofollow">
+                                <span class="d-block d-sm-none"><i class="fas fa-envelope"></i></span>
+                                <span class="d-none d-sm-block">$ContactEmail</span>
+                            </a>
+                        </li>
+                    <% end_if %>
+                <% end_with %>
                 <% if $SocialNav %>
                     <% with $SocialNav %>
                         <% loop $MenuItems %>
