@@ -84,7 +84,7 @@
                 <% end_with %>
 
                 <% if $SocialNav %>
-                    <ul class="nav justify-content-end">
+                    <ul class="nav">
                         <% loop $SocialNav.MenuItems %>
                             <li class="nav-item {$ConvertedService}">
                                 <a class="nav-link" href="{$URL}" <% if $Title %>title="{$Title}"<% end_if %>>
