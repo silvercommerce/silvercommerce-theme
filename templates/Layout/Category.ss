@@ -1,6 +1,6 @@
 <% include Banner %>
 
-<% if $Menu(2) || $SideBarView.Widgets %>
+<% if $Menu(2) || $SideBarView.Widgets || $AllTags.Exists %>
 	<% include SideBar %>
 <% end_if %>
 	
