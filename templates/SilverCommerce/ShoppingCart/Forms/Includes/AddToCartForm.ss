@@ -7,7 +7,7 @@
 	<p id="{$FormName}_error" class="message $MessageType" style="display: none"></p>
 	<% end_if %>
 
-	<fieldset class="input-group mb-3">
+	<fieldset>
 		<% if $Legend %><legend>$Legend</legend><% end_if %>
 		<% loop $Fields %>
             <% if $Name != "Quantity" %>
@@ -15,18 +15,14 @@
             <% end_if %>
 		<% end_loop %>
 
-		<% if $Actions %>
+		<% if $Actions %><div class="input-group mb-3">
 			<div class="input-group-append">
-				<% loop $Fields %>
-					<% if $Name == "Quantity" %>
-						$FieldHolder
-					<% end_if %>
-				<% end_loop %>
+				{$Fields.dataFieldByName("Quantity").FieldHolder}
 				<% loop $Actions %>
 					$Field
 				<% end_loop %>
 			</div>
-		<% end_if %>
+		</div><% end_if %>
 	</fieldset>
 <% if $IncludeFormTag %>
 </form>
