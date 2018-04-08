@@ -49,7 +49,11 @@
 			<% end_if %>
 		</p>
 
-		<p>$Content.FirstParagraph</p>
+		<% if $ContentSummary %>
+			<p>$ContentSummary</p>
+		<% else %>
+			<p>$Content.FirstParagraph</p>
+		<% end_if %>
 	</div>
 
 	$AddToCartForm
