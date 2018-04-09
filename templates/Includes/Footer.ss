@@ -22,7 +22,7 @@
             <div class="col-sm">
                 <h2 class="h5"><%t SilverCommerce.Categories "Categories" %></h2>
                 <ul class="nav flex-column">
-                    <% loop $CatalogueCategories %>
+                    <% loop $CatalogueMenu %>
                         <li class="$LinkingMode nav-item<% if $isCurrent || $isSection %> active<% end_if %>">
                             <a class="nav-link" href="$Link" title="$Title.XML">$MenuTitle.XML</a>
                         </li>
@@ -60,7 +60,7 @@
             </div>
 
             <div class="col-sm">
-                <h2 class="h5"><%t SilverCommerce.Contacc "Contact" %></h2>
+                <h2 class="h5"><%t SilverCommerce.Contact "Contact" %></h2>
                 <% with $SiteConfig %>
                     <% if $ContactNumber || $ContactEmail || $ContactAddress %>
                         <ul class="nav flex-column justify-content-end">
