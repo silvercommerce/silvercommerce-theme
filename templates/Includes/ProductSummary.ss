@@ -10,7 +10,7 @@
     <% end_with %>
 
     <div class="card-body">
-        <p class="h4 product-title">
+        <p class="h4 product-title match-height">
             <a href="{$Link}" title="{$Title}">
                 {$Title}
             </a>

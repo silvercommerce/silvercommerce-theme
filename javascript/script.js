@@ -9,6 +9,12 @@ jQuery.noConflict();
 		on: 'mouseover'
 	});
 
+	$('.match-height').matchHeight();
+
+	$('.match-height').imagesLoaded(function() {
+		$.fn.matchHeight._update();
+	});
+
 	$('.commerce-product .product-thumbs img').on("click", function(e) {
 		preloader.show();
 		var url = $(this).attr("data-image");
