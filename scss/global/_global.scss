@@ -20,3 +20,19 @@ body {
 hr {
     margin-bottom: $grid-gutter-width;
 }
+.message {
+    @extend .alert;
+    &.good {
+        @extend .alert-success;
+    }
+    &.bad,
+    &.error {
+        @extend .alert-danger;
+    }
+    &.info {
+        @extend .alert-info;
+    }
+    &.warning {
+        @extend .alert-warning;
+    }
+}

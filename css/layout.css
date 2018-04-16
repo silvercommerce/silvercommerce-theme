@@ -5134,7 +5134,7 @@ tbody.collapse.show {
   border-radius: 0;
 }
 
-.alert {
+.alert, .message {
   position: relative;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
@@ -5190,59 +5190,59 @@ tbody.collapse.show {
   color: #525557;
 }
 
-.alert-success {
+.alert-success, .message.good {
   color: #155724;
   background-color: #d4edda;
   border-color: #c3e6cb;
 }
 
-.alert-success hr {
+.alert-success hr, .message.good hr {
   border-top-color: #b1dfbb;
 }
 
-.alert-success .alert-link {
+.alert-success .alert-link, .message.good .alert-link {
   color: #0b2e13;
 }
 
-.alert-info {
+.alert-info, .message.info {
   color: #0c5460;
   background-color: #d1ecf1;
   border-color: #bee5eb;
 }
 
-.alert-info hr {
+.alert-info hr, .message.info hr {
   border-top-color: #abdde5;
 }
 
-.alert-info .alert-link {
+.alert-info .alert-link, .message.info .alert-link {
   color: #062c33;
 }
 
-.alert-warning {
+.alert-warning, .message.warning {
   color: #856404;
   background-color: #fff3cd;
   border-color: #ffeeba;
 }
 
-.alert-warning hr {
+.alert-warning hr, .message.warning hr {
   border-top-color: #ffe8a1;
 }
 
-.alert-warning .alert-link {
+.alert-warning .alert-link, .message.warning .alert-link {
   color: #533f03;
 }
 
-.alert-danger {
+.alert-danger, .message.bad, .message.error {
   color: #721c24;
   background-color: #f8d7da;
   border-color: #f5c6cb;
 }
 
-.alert-danger hr {
+.alert-danger hr, .message.bad hr, .message.error hr {
   border-top-color: #f1b0b7;
 }
 
-.alert-danger .alert-link {
+.alert-danger .alert-link, .message.bad .alert-link, .message.error .alert-link {
   color: #491217;
 }
 
