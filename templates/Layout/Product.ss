@@ -57,6 +57,16 @@
 	</div>
 
 	$AddToCartForm
+	<% if $Tags %>
+		<p>
+			<strong>Tagged with:</strong> 
+			<span class="lead">
+				<% loop $Tags %>
+					<a href="{$Up.Parent.Link}?t={$URLSegment}" class="badge badge-light">$Title</a><% if not $Last %>&nbsp;<% end_if %>
+				<% end_loop %>
+			</span>
+		</p>
+	<% end_if %>
 </div>
 
 <div class="col-sm-12 mt-3 mb-3 product-description">
