@@ -59,7 +59,7 @@
 	$AddToCartForm
 	<% if $Tags %>
 		<p>
-			<strong>Tagged with:</strong> 
+			<strong><%t CatalogueFrontend.Tags "Tags" %>:</strong> 
 			<span class="lead">
 				<% loop $Tags %>
 					<a href="{$Up.Parent.Link}?t={$URLSegment}" class="badge badge-light">$Title</a><% if not $Last %>&nbsp;<% end_if %>
