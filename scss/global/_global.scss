@@ -25,10 +25,14 @@ hr {
     &.good {
         @extend .alert-success;
     }
-    &.bad {
+    &.bad,
+    &.error {
         @extend .alert-danger;
     }
     &.info {
         @extend .alert-info;
+    }
+    &.warning {
+        @extend .alert-warning;
     }
 }

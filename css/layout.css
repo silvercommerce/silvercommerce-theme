@@ -5218,31 +5218,31 @@ tbody.collapse.show {
   color: #062c33;
 }
 
-.alert-warning {
+.alert-warning, .message.warning {
   color: #856404;
   background-color: #fff3cd;
   border-color: #ffeeba;
 }
 
-.alert-warning hr {
+.alert-warning hr, .message.warning hr {
   border-top-color: #ffe8a1;
 }
 
-.alert-warning .alert-link {
+.alert-warning .alert-link, .message.warning .alert-link {
   color: #533f03;
 }
 
-.alert-danger, .message.bad {
+.alert-danger, .message.bad, .message.error {
   color: #721c24;
   background-color: #f8d7da;
   border-color: #f5c6cb;
 }
 
-.alert-danger hr, .message.bad hr {
+.alert-danger hr, .message.bad hr, .message.error hr {
   border-top-color: #f1b0b7;
 }
 
-.alert-danger .alert-link, .message.bad .alert-link {
+.alert-danger .alert-link, .message.bad .alert-link, .message.error .alert-link {
   color: #491217;
 }
 
