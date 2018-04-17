@@ -1,7 +1,7 @@
 <div class="sub-header mb-3">
     <div class="container px-lg-0">
         <nav class="navbar navbar-expand-lg navbar-dark py-0 px-lg-0">
-            <ul class="navbar-nav mx-auto ml-lg-0">
+            <ul class="nav mx-auto ml-lg-0">
                 <% with $SiteConfig %>
                     <% if $ContactPhone %>
                         <li class="nav-item small">
