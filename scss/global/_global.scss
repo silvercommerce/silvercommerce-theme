@@ -9,11 +9,18 @@ body {
     background: $footer-background;
     .container {
         padding: 0 $grid-gutter-width/2;
-    } 
+    }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         .banner-row {
             margin: 0;
+            min-width: 100%;
+            .banner-image {
+                width: 100%;
+                .img-fluid {
+                    width: 100%;
+                }
+            } 
         }
     }
     @include media-breakpoint-up(md) {
