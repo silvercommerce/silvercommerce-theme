@@ -9523,6 +9523,13 @@ body .cookie_inner {
   padding: 0 15px;
 }
 
+@media (max-width: 991.98px) {
+  html .banner-row,
+  body .banner-row {
+    margin: 0;
+  }
+}
+
 @media (min-width: 768px) {
   html .container, html #cookie_container .cookie_inner, #cookie_container html .cookie_inner,
   body .container,

@@ -11,6 +11,11 @@ body {
         padding: 0 $grid-gutter-width/2;
     } 
 
+    @include media-breakpoint-down(md) {
+        .banner-row {
+            margin: 0;
+        }
+    }
     @include media-breakpoint-up(md) {
         .container {
             padding: 0 $grid-gutter-width;
