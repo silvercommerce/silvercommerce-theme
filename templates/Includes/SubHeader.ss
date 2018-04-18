@@ -4,18 +4,18 @@
             <ul class="nav mx-auto ml-lg-0">
                 <% with $SiteConfig %>
                     <% if $ContactPhone %>
-                        <li class="nav-item small">
+                        <li class="nav-item">
                             <a class="nav-link" href="tel:{$TrimmedContactPhone}" rel="nofollow">
                                 <span class="d-block d-sm-none"><i class="fas fa-phone"></i></span>
-                                <span class="d-none d-sm-block">$ContactPhone</span>
+                                <span class="d-none d-sm-block small">$ContactPhone</span>
                             </a>
                         </li>
                     <% end_if %>
                     <% if $ContactEmail %>
-                        <li class="nav-item small">
+                        <li class="nav-item">
                             <a class="nav-link" href="mailto:{$ContactEmail}" rel="nofollow">
                                 <span class="d-block d-sm-none"><i class="fas fa-envelope"></i></span>
-                                <span class="d-none d-sm-block">$ContactEmail</span>
+                                <span class="d-none d-sm-block small">$ContactEmail</span>
                             </a>
                         </li>
                     <% end_if %>
