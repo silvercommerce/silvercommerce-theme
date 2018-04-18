@@ -5,13 +5,19 @@
         </div>
     </div>
 <% else_if $FeaturedImage %>
-    <p class="banner-image row mb-4">
-        <img class="img-fluid" src="$FeaturedImage.Fill(1200,500).URL" alt="$FeaturedImage.Title">
-    </p>
+    <div class="row">
+        <p class="banner-image mb-4">
+            <img class="img-fluid d-none d-md-block" src="$FeaturedImage.Fill(1200,500).URL" alt="$FeaturedImage.Title">
+            <img class="img-fluid d-md-none" src="$FeaturedImage.Fill(1200,800).URL" alt="$FeaturedImage.Title">
+        </p>
+    </div>
 <% else_if $Parent.FeaturedImage %>
-    <p class="banner-image row mb-4">
-        <img class="img-fluid" src="$Parent.FeaturedImage.Fill(1200,500).URL" alt="$Parent.FeaturedImage.Title">
-    </p>
+    <div class="row">
+        <p class="banner-image mb-4">
+            <img class="img-fluid d-none d-md-block" src="$Parent.FeaturedImage.Fill(1200,500).URL" alt="$Parent.FeaturedImage.Title">
+            <img class="img-fluid d-md-none" src="$Parent.FeaturedImage.Fill(1200,500).URL" alt="$Parent.FeaturedImage.Title">
+        </p>
+    </div>
 <% end_if %>
 
 <div class="col-sm-12">
