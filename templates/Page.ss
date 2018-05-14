@@ -27,6 +27,24 @@
 			<meta property="og:image" content="{$BaseHref}{$SiteConfig.Logo.SetWidth(550).FileName}" />
 		<% end_if %>
 
+		<style id="antiClickjack">body{display:none !important;}</style>		
+
+		<script>
+			// Anti click jacking script
+			try {
+				if (self.location.hostname === top.location.hostname) {
+					var antiClickjack = document.getElementById("antiClickjack");
+					antiClickjack.parentNode.removeChild(antiClickjack);
+				} else {
+					top.location = self.location;
+				}
+			} catch(e) {
+				if (e.name == "SecurityError") {
+					top.location = self.location;
+				}
+			}
+		</script>
+
 		<% include Icons %>
 		<% include Requirements %>
 	</head>
