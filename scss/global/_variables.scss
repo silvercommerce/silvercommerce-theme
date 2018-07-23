@@ -437,12 +437,12 @@ $navbar-light-disabled-color:       rgba($header-colour, .3) !default;
 $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 $navbar-light-toggler-border-color: rgba($header-colour, .1) !default;
 
-$navbar-dark-color:                 rgba($header-background, .9);
-$navbar-dark-hover-color:           rgba($header-background, .7);
-$navbar-dark-active-color:          rgba($header-background, .5);
-$navbar-dark-disabled-color:        rgba($header-background, .3);
+$navbar-dark-color:                 rgba($header-background, .9) !default;
+$navbar-dark-hover-color:           rgba($header-background, .7) !default;
+$navbar-dark-active-color:          rgba($header-background, .5) !default;
+$navbar-dark-disabled-color:        rgba($header-background, .3) !default;
 $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
-$navbar-dark-toggler-border-color:  rgba($header-background, .1);
+$navbar-dark-toggler-border-color:  rgba($header-background, .1) !default;
 
-$breadcrumb-bg:                     transparent;
+$breadcrumb-bg:                     transparent !default;
 $card-cap-bg:                       $secondary !default;
