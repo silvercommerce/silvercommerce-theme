@@ -7,15 +7,15 @@
 <% else_if $FeaturedImage %>
     <div class="banner-row row">
         <p class="banner-image mb-4">
-            <img class="img-fluid d-none d-md-block" src="$FeaturedImage.Fill(1200,500).URL" alt="$FeaturedImage.Title">
-            <img class="img-fluid d-md-none" src="$FeaturedImage.Fill(400,300).URL" alt="$FeaturedImage.Title">
+            <span class="d-none d-md-block">$FeaturedImage.Fill(1200,500)</span>
+            <span class="d-md-none">$FeaturedImage.Fill(400,175)</span>
         </p>
     </div>
 <% else_if $Parent.FeaturedImage %>
     <div class="banner-row row">
         <p class="banner-image mb-4">
-            <img class="img-fluid d-none d-md-block" src="$Parent.FeaturedImage.Fill(1200,500).URL" alt="$Parent.FeaturedImage.Title">
-            <img class="img-fluid d-md-none" src="$Parent.FeaturedImage.Fill(400,300).URL" alt="$Parent.FeaturedImage.Title">
+            <span class="d-none d-md-block">$Parent.FeaturedImage.Fill(1200,500)</span>
+            <span class="d-md-none">$Parent.FeaturedImage.Fill(400,175)</span>
         </p>
     </div>
 <% end_if %>

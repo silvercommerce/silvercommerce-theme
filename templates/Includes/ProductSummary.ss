@@ -1,11 +1,7 @@
 <div class="product-summary card">
     <% with $PrimaryImage %>
         <a href="{$Top.Link}">
-            <img
-                class="img-fluid product-img"
-                src="$Pad(400,400).Link"
-                alt="$Title"
-            >
+            $Pad(400,400)
         </a>
     <% end_with %>
 

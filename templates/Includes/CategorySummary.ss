@@ -1,11 +1,7 @@
 <div class="category-summary card">
     <% with $PrimaryImage %>
         <a href="{$Up.Link}">
-            <img
-                class="img-fluid category-img"
-                src="$Fill(400,400).Link"
-                alt="$Title"
-            >
+            $Fill(400,400)
         </a>
     <% end_with %>
 

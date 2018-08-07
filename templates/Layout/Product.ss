@@ -8,11 +8,7 @@
 			</div>
 		
 			<div class="product-main-image" data-link="$Pad(1200,1200).Link">
-				<img
-					class="img-fluid"
-					src="$Pad(600,600).Link"
-					alt="$Title"
-				>
+				$Pad(600,600)
 			</div>
 		<% end_with %>
 
@@ -20,7 +16,7 @@
 			<div class="product-thumbs">
 				<% loop $SortedImages %>
 					<img
-						class="img-responsive"
+						class="img-fluid"
 						src="{$Pad(75,75).Link}"
 						alt="{$Title}"
 						data-image="{$Pad(600,600).Link}"

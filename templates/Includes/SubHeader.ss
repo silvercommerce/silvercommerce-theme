@@ -25,12 +25,7 @@
                         <% loop $MenuItems %>
                             <li class="nav-item {$ConvertedService}">
                                 <a class="nav-link" href="{$URL}" <% if $Title %>title="{$Title}"<% end_if %>>
-                                    <span class="{$ConvertedService} {$ExtraClasses} fa-lg">
-                                        <img
-                                            src="{$Top.BaseHref}socialnav/images/{$ConvertedService}.png"
-                                            alt="{$Service}"
-                                        />
-                                    </span>
+                                    <span class="{$ConvertedService} {$ExtraClasses} fa-lg"></span>
                                 </a>
                             </li>
                         <% end_loop %>
