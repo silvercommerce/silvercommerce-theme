@@ -99,7 +99,11 @@
         <% include FooterDisclaimer %>
 
         <% if $SiteConfig.CardLogos %>
-            <p class="supported-card-logos text-center">$SiteConfig.CardLogos</p>
+            <div class="row justify-content-md-center">
+                <div class="supported-card-logos col-md-3">
+                    $SiteConfig.CardLogos
+                </div>
+            </div>
         <% end_if %>
     </div>
 </footer>
