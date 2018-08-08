@@ -5,7 +5,7 @@
         <div class="col-sm-12 content text-center" role="main">
             $Content
             $Form
-            $PageComments
+    		$CommentsForm
         </div>
     </div>
 
