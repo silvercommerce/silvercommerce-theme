@@ -3,18 +3,18 @@
 
 	<div class="row">
 		<% if $Menu(2) || $SideBarView.Widgets %>
-			<aside class="col-sm col-sm-auto" role="complementary">
-				<% include SideBar %>
-			</aside>
+			<% include SideBar %>
 		<% end_if %>
 		<div class="col-sm content" role="main">
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col">
 					$Content
 				</div>
-				<div class="col-sm-6">
-					$Form
-				</div>
+				<% if $Form %>
+					<div class="col-sm-6">
+						$Form
+					</div>
+				<% end_if %>
 			</div>
 			$PageComments
 		</div>
