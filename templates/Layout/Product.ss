@@ -66,7 +66,7 @@
 </div>
 
 <div class="col-sm-12 mt-3 mb-3 product-description">
-	<h2><%t CatalogueFrontend.Descriptiion "Description" %></h2>
+	<h2><%t CatalogueFrontend.Description "Description" %></h2>
 	<div class="content">$Content</div>
 </div>
 
