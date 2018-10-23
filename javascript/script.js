@@ -34,4 +34,19 @@ jQuery.noConflict();
 
 		return false;
 	});
+
+	$('#Form_PaymentForm').submit(function(e) {
+		$form = $(this);
+		$button = $('#Form_PaymentForm_action_doSubmitPayment');
+		$button.attr('disabled','disabled');
+		$button.prepend(
+			'<i class="fas fa-spinner fa-pulse"></i>'
+		);
+		if ($form.hasClass('disabled')) {
+			e.preventdefault();
+		} else {
+			$form.addClass('diabled');
+		}
+	});
+
 }(jQuery));

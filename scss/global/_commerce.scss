@@ -21,3 +21,16 @@
         }
     }
 }
+
+#Form_PaymentForm {
+    #Expiry .fieldgroup {
+        @extend .row;
+        @extend .mb-3;
+        .fieldgroup-field {
+            @extend .col;
+            label {
+                @extend .sr-only;
+            }
+        }
+    }
+}
