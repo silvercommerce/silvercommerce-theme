@@ -10144,7 +10144,7 @@ footer a {
   color: #343a40;
 }
 
-footer a.active {
+footer a.active, footer a:hover {
   color: rgba(52, 58, 64, 0.5);
 }
 

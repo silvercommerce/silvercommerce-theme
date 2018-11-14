@@ -9,7 +9,8 @@ footer {
     font-size: 0.9rem;
     a {
         color: $footer-colour;
-        &.active {
+        &.active,
+        &:hover {
             color: rgba($footer-colour, 0.5);
         }
     }
