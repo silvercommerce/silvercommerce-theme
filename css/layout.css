@@ -10005,6 +10005,13 @@ body #cookie_container .cookie_inner,
   padding: 0 15px;
 }
 
+html .container h1, html #cookie_container .cookie_inner h1, #cookie_container html .cookie_inner h1,
+body .container h1,
+body #cookie_container .cookie_inner h1,
+#cookie_container body .cookie_inner h1 {
+  margin-bottom: 1.5rem;
+}
+
 @media (max-width: 767.98px) {
   html .banner-row,
   body .banner-row {

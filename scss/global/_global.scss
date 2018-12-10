@@ -9,6 +9,9 @@ body {
     background: $footer-background;
     .container {
         padding: 0 $grid-gutter-width/2;
+        h1 {
+            margin-bottom: $spacer*1.5;
+        }
     }
 
     @include media-breakpoint-down(sm) {

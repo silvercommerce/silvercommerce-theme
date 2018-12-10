@@ -1,5 +1,9 @@
-<% if $MapEmbed %>
-    <div class="map-row row">
+<% if $CarosuelSlides && $ShowCarousel %>
+    <div class="carousel-row banner-row">
+        $CarouselSlides
+    </div>
+<% else_if $MapEmbed %>
+    <div class="map-row banner-row row">
         <div class="mb-4 embed-responsive embed-responsive-map">
             $MapEmbed
         </div>
