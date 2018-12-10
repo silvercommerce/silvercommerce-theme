@@ -23,15 +23,8 @@
     <% end_if %>
 
     <% if $FeaturedCategories.Exists %>
-        <h2 class="text-center">
-            <%t CatalogueFrontEnd.FeaturedCategories "Featured Categories" %>
-        </h2>
-        <div class="row mt-4">
-            <% loop $FeaturedCategories %>
-                <div class="col-sm-4 col-lg-3 mb-4">
-                    <% include CategorySummary %>
-                </div>
-            <% end_loop %>
-        </div>
+        <% loop $FeaturedCategories %>
+            <% include CategorySummary %>
+        <% end_loop %>
     <% end_if %>
 </div>
