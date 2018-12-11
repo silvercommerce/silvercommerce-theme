@@ -3,7 +3,7 @@
 	<div class="container px-lg-0">
 		<div class="row align-items-stretch">
 			<div class="col-7 col-sm-6 col-md-4 col-lg-auto">
-				<h1>				
+				<p class="h1 mb-0">				
 					<a href="$BaseHref" class="brand" rel="home">
 						<% if $SiteConfig.Logo %>
 							$SiteConfig.Logo.ScaleHeight(80)
@@ -11,7 +11,7 @@
 							$SiteConfig.Title
 						<% end_if %>
 					</a>
-				</h1>
+				</p>
 				<% if not $SiteConfig.Logo && $SiteConfig.Tagline %>
 					<p class="d-none d-sm-block">
 						<a href="$BaseHref" class="brand" rel="home">
