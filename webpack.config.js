@@ -4,7 +4,8 @@ const PATHS = {
   MODULES: Path.resolve('node_modules'), // your node_modules folder name, or full path
   FILES_PATH: '../', // relative path from your css files to your other files, such as images and fonts
   ROOT: Path.resolve(), // the root path, where your webpack.config.js is located.
-  SCSS: Path.resolve('scss'), // the root path to your source files
+  SRC: Path.resolve('src'), // the root path, where your webpack.config.js is located.
+  SCSS: Path.resolve('src/scss'), // the root path to your source files
   CSS: Path.resolve('css'), // the root path to your source files
   JS: Path.resolve('javascript'), // the root path to your built files
 };
@@ -20,6 +21,9 @@ module.exports = {
             `${PATHS.MODULES}/jquery-match-height/dist/jquery.matchHeight-min.js`,
             `${PATHS.MODULES}/jquery-zoom/jquery.zoom.min.js`,
             `${PATHS.MODULES}/@fortawesome/fontawesome-free/js/all.js`
+        ],
+        script: [
+            `${PATHS.SRC}/javascript/script.js`
         ],
         bundlecss: [
             `${PATHS.SCSS}/bundle.scss`
