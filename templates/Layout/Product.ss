@@ -31,18 +31,7 @@
 <div class="col-md-6 commerce-product">
 	<div class="catalogue-product-summary">
 		<p class="h3 price">
-			<strong class="value">
-				<% if $IncludesTax %>
-					{$PriceAndTax.nice}
-				<% else %>
-					{$Price.nice}
-				<% end_if %>
-			</strong>
-			<% if TaxString %>
-				<small class="tax"> 
-					&nbsp;{$TaxString}
-				</small>
-			<% end_if %>
+			$NicePrice
 		</p>
 
 		<% if $ContentSummary %>

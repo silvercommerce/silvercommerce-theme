@@ -13,18 +13,7 @@
         </p>
 
         <p class="product-price">
-            <strong class="price">                            
-                <% if $IncludesTax %>
-                    {$PriceAndTax.nice}
-                <% else %>
-                    {$Price.nice}
-                <% end_if %>
-            </strong>                
-            <% if TaxString %>
-                <small class="tax"> 
-                    {$TaxString}
-                </small>
-            <% end_if %>
+            $NicePrice
         </p>
     </div>
 
