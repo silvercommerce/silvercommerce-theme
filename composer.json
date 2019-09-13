@@ -23,7 +23,7 @@
     },
     "require": {
         "composer/installers": "*",
-        "silvercommerce/catalogue-admin": "<1.1",
+        "silvercommerce/catalogue-admin": ">=1.1",
         "silvercommerce/catalogue-frontend": "^1.0"
     }
 }
