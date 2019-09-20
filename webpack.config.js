@@ -17,9 +17,9 @@ module.exports = {
             `${PATHS.MODULES}/popper.js/dist/umd/popper.js`,
             `${PATHS.MODULES}/tether/dist/js/tether.js`,
             `${PATHS.MODULES}/bootstrap/dist/js/bootstrap.js`,
-            `${PATHS.MODULES}/imagesloaded/imagesloaded.pkgd.js`,
-            `${PATHS.MODULES}/jquery-match-height/dist/jquery.matchHeight-min.js`,
-            `${PATHS.MODULES}/jquery-zoom/jquery.zoom.min.js`,
+            `${PATHS.MODULES}/imagesloaded/imagesloaded.js`,
+            `${PATHS.MODULES}/jquery-match-height/dist/jquery.matchHeight.js`,
+            `${PATHS.MODULES}/jquery-zoom/jquery.zoom.js`,
             `${PATHS.MODULES}/@fortawesome/fontawesome-free/js/all.js`
         ],
         script: [
@@ -88,5 +88,11 @@ module.exports = {
                 chunkFilename: 'css/[id].css',
             }
         )
-    ]
+    ],
+    resolve: {
+        // Expose Jquery Globally
+        alias: {
+            jquery: "jquery/src/jquery"
+        }
+    }
 };
