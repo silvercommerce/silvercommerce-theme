@@ -3,5 +3,5 @@
 		<% if $ButtonContent %>$ButtonContent<% else %><span>$Title.XML</span><% end_if %>
 	</button>
 <% else %>
-	<input $addExtraClass('btn btn-primary').AttributesHTML />
+	<input $addExtraClass('btn').AttributesHTML />
 <% end_if %>
