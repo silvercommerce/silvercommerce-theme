@@ -30,7 +30,7 @@
 
 <div class="col-md-6 commerce-product">
 	<div class="catalogue-product-summary">
-		<p class="h3 price">
+		<p class="h3 price catalogue-product-price">
 			$NicePrice
 		</p>
 
