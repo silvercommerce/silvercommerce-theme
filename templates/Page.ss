@@ -14,18 +14,6 @@
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		
-		<% if $FeaturedImage %>
-			<meta property="og:image" content="{$BaseHref}{$FeaturedImage.SetWidth(550).FileName}" />
-		<% else_if $Image %>
-			<meta property="og:image" content="{$BaseHref}{$Image.SetWidth(550).FileName}" />
-		<% else_if $Images.exists %>
-			<meta property="og:image" content="{$BaseHref}{$Images.first.SetWidth(550).FileName}" />
-		<% else_if $Parent.FeaturedImage %>
-			<meta property="og:image" content="{$BaseHref}{$Parent.FeaturedImage.SetWidth(550).FileName}" />
-		<% else_if $SiteConfig.Logo %>
-			<meta property="og:image" content="{$BaseHref}{$SiteConfig.Logo.SetWidth(550).FileName}" />
-		<% end_if %>
 
 		<style id="antiClickjack">body{display:none !important;}</style>		
 
