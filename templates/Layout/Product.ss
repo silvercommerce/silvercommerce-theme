@@ -3,10 +3,6 @@
 <div class="col-md-6 commerce-product">
 	<div class="product-images">
 		<% with $PrimaryImage %>
-			<div class="preloader" style="">
-				<i class="fa fa-circle-notch fa-3x fa-spin"></i>
-			</div>
-		
 			<div class="product-main-image" data-link="$Pad(1200,1200).Link">
 				$Pad(600,600)
 			</div>
