@@ -1,3 +1,5 @@
+<%-- Core Theme Imports --%>
+
 <%-- CSS Imports --%>
 <% require themedCSS('bundlecss') %>
 

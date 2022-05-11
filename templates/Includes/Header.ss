@@ -1,3 +1,4 @@
+<%-- Global site header and navigation --%>
 <header class="sticky-top" role="banner">
 	<% include SubHeader %>
 	<div class="container px-lg-0">

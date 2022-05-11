@@ -1,21 +1,11 @@
-<% if $CarosuelSlides && $ShowCarousel %>
-    <div class="carousel-row banner-row">
-        $CarouselSlides
-    </div>
-<% else_if $MapEmbed %>
-    <div class="map-row banner-row row">
-        <div class="mb-4 embed-responsive embed-responsive-map">
-            $MapEmbed
-        </div>
-    </div>
-<% else_if $FeaturedImage %>
+<% if $FeaturedImage.exists %>
     <div class="banner-row row">
         <p class="banner-image mb-4">
             <span class="d-none d-md-block">$FeaturedImage.Fill(1200,500)</span>
             <span class="d-md-none">$FeaturedImage.Fill(400,175)</span>
         </p>
     </div>
-<% else_if $Parent.FeaturedImage %>
+<% else_if $Parent.FeaturedImage.exists %>
     <div class="banner-row row">
         <p class="banner-image mb-4">
             <span class="d-none d-md-block">$Parent.FeaturedImage.Fill(1200,500)</span>

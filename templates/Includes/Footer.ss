@@ -1,3 +1,4 @@
+<%-- Global site footer --%>
 <footer role="contentinfo">
     <div class="container px-lg-0">
         <div class="row">
