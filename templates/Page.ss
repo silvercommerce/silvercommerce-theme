@@ -41,7 +41,7 @@
 
 		<div class="main<% if $Level(2) %> sublevel<% end_if %><% if $FeaturedImage || $MapEmbed %> no-pad-top<% end_if %><% if $SiteConfig.TileBackground %> tile-background<% else %> full-background<% end_if %>" role="main"<% if $SiteConfig.Background %> style="background-image: url($SiteConfig.Background.ScaleMaxWidth(1920).URL)"<% end_if %>>
 			<% include Banner %>
-			<% include Layout %>
+			<% include Layout Layout=$Layout, Top=$Top, Me=$Me %>
 		</div>
 
 		<% include Footer %>
