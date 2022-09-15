@@ -10,8 +10,11 @@
 		<% loop $Controller.Items %>
 			<div class="row mb-4 justify-content-end justify-content-md-between">
 				<div class="col-2 mb-3">
-					$Image.Square
+					<% if $FindStockItem %>
+						{$FindStockItem.PrimaryImage}
+					<% end_if %>
 				</div>
+
 				<div class="col-10 col-md mb-3">
 					<div class="row">
 						<div class="col-12 col-md mb-2">
