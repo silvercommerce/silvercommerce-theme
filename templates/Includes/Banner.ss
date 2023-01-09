@@ -1,16 +1,16 @@
 <% if $FeaturedImage.exists %>
-    <div class="banner-row row">
-        <p class="banner-image mb-4">
-            <span class="d-none d-md-block">$FeaturedImage.Fill(1200,500)</span>
+    <div class="banner-row">
+        <div class="banner-image mb-4">
+            <span class="d-none d-md-block">$FeaturedImage.Fill(2000,500)</span>
             <span class="d-md-none">$FeaturedImage.Fill(400,175)</span>
-        </p>
+        </div>
     </div>
 <% else_if $Parent.FeaturedImage.exists %>
-    <div class="banner-row row">
-        <p class="banner-image mb-4">
-            <span class="d-none d-md-block">$Parent.FeaturedImage.Fill(1200,500)</span>
+    <div class="banner-row">
+        <div class="banner-image col-12 mb-4">
+            <span class="d-none d-md-block">$Parent.FeaturedImage.Fill(2000,500)</span>
             <span class="d-md-none">$Parent.FeaturedImage.Fill(400,175)</span>
-        </p>
+        </div>
     </div>
 <% end_if %>
 
