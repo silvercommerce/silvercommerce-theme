@@ -11,6 +11,13 @@
                 {$Title}
             </a>
         </p>
+        <% if $Tags.exists %>
+            <p><% loop $Tags %>
+                    <a href="{$Up.Parent.Link}?t={$URLSegment}" class="badge badge-light">
+                        $Title
+                    </a><% if not $Last %>&nbsp;<% end_if %>
+            <% end_loop %></p>
+        <% end_if %>
 
         <p class="product-price">
             $NicePrice
