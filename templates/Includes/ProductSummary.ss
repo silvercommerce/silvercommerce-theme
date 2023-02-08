@@ -1,4 +1,4 @@
-<div class="product-summary card">
+<div class="product-summary card h-100">
     <% with $PrimaryImage %>
         <a href="{$Top.Link}">
             $Pad(400,400)
