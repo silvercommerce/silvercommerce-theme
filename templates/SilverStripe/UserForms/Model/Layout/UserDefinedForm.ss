@@ -1,6 +1,4 @@
 <div class="container typography">
-	<% include Banner %>
-
 	<div class="row">
 		<% if $Menu(2) || $SideBarView.Widgets %>
 			<% include SideBar %>
