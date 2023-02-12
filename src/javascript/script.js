@@ -1,53 +1,55 @@
-jQuery.noConflict();
+(function ($) {
+  const mainImage = $('.commerce-product .product-main-image')
 
-(function($) {
-	var main_image = $('.commerce-product .product-main-image');
+  mainImage.zoom({
+    url: mainImage.attr('data-link'),
+    on: 'mouseover',
+  })
 
-	main_image.zoom({
-		url: main_image.attr('data-link'),
-		on: 'mouseover'
-	});
+  $('.commerce-product .product-thumbs img').on(
+    'click',
+    (e) => {
+      const thumb = e.target
+      const url = thumb.dataset.image
+      const zoomURL = thumb.dataset.zoom
+      const image = $('.commerce-product .product-main-image img')
 
-	$('.match-height').matchHeight();
+      mainImage.css('opacity', 0.5)
 
-	$('.match-height').imagesLoaded(function() {
-		$.fn.matchHeight._update();
-	});
+      alert(url);
 
-	$('.commerce-product .product-thumbs img').on("click", function(e) {
-		var url = $(this).attr("data-image");
-		var zoom_url = $(this).attr("data-zoom");
-		var image = $(".commerce-product .product-main-image img");
+      image.attr('src', url).on(
+        'load',
+        () => {
+          alert(url);
 
-		main_image.css('opacity', 0.5);
+          mainImage
+            .trigger('zoom.destroy')
+            .attr('data-link', zoomURL)
+            .zoom({
+              url: zoomURL,
+              on: 'mouseover',
+            })
 
-		image.attr("src", url).on("load", function() {
-			main_image
-				.trigger("zoom.destroy")
-				.attr("data-link", zoom_url)
-				.zoom({
-					url: zoom_url,
-					on: 'mouseover'
-				});
+          mainImage.css('opacity', 1)
+        },
+      )
+    },
+  )
 
-			main_image.css('opacity', 1);
-		});
+  $('#Form_PaymentForm').submit((e) => {
+    const form = $(this)
+    const button = $('#Form_PaymentForm_action_doSubmitPayment')
+    button
+      .attr('disabled', 'disabled')
+      .prepend(
+        '<i class="fas fa-spinner fa-pulse"></i>',
+      )
 
-		return;
-	});
-
-	$('#Form_PaymentForm').submit(function(e) {
-		$form = $(this);
-		$button = $('#Form_PaymentForm_action_doSubmitPayment');
-		$button.attr('disabled','disabled');
-		$button.prepend(
-			'<i class="fas fa-spinner fa-pulse"></i>'
-		);
-		if ($form.hasClass('disabled')) {
-			e.preventdefault();
-		} else {
-			$form.addClass('diabled');
-		}
-	});
-
-}(jQuery));
+    if (form.hasClass('disabled')) {
+      e.preventdefault()
+    } else {
+      form.addClass('diabled')
+    }
+  })
+}(jQuery))
