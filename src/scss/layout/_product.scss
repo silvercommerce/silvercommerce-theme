@@ -1,34 +1,34 @@
 .commerce-product {
-    .product-images {
-        position: relative;
+  .product-images {
+    position: relative;
 
-        .preloader {
-            position: absolute;
-            display: none;
-            left: $grid-gutter-width/2;
-            right: $grid-gutter-width/2;
-            top: 0;
-            bottom: 0;
-            z-index: 99;
-            background-color: rgba(255, 255, 255, 0.5);
-        }
-
-        .product-thumbs {
-            margin-top: $grid-gutter-width/2;
-
-            img {
-                cursor: pointer;
-            }
-        }
+    .preloader {
+      position: absolute;
+      display: none;
+      left: $grid-gutter-width/2;
+      right: $grid-gutter-width/2;
+      top: 0;
+      bottom: 0;
+      z-index: 99;
+      background-color: rgba(255, 255, 255, 50%);
     }
 
-    #AddToCartForm_AddToCartForm {
-        #AddToCartForm_AddToCartForm_Quantity_Holder {
-            margin-bottom: 0;
+    .product-thumbs {
+      margin-top: $grid-gutter-width/2;
 
-            label {
-                display: none;
-            }
-        }
+      img {
+        cursor: pointer;
+      }
     }
+  }
+
+  #AddToCartForm_AddToCartForm {
+    #AddToCartForm_AddToCartForm_Quantity_Holder {
+      margin-bottom: 0;
+
+      label {
+        display: none;
+      }
+    }
+  }
 }

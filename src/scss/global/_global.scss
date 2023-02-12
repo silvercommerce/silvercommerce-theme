@@ -2,52 +2,64 @@
     CORE STYLES
 ****************************************/
 :root {
-    font-size: 14px;
+  font-size: 14px;
 }
+
 html,
 body {
-    background: $footer-background;
-    .container {
-        padding: 0 $grid-gutter-width/2;
-        h1 {
-            margin-bottom: $spacer*1.5;
-        }
-    }
+  background: $footer-background;
 
-    @include media-breakpoint-down(sm) {
-        .banner-row {
-            margin: 0;
-            min-width: 100%;
-            .banner-image {
-                width: 100%;
-                .img-fluid {
-                    width: 100%;
-                }
-            } 
-        }
+  .container {
+    padding: 0 $grid-gutter-width/2;
+
+    h1 {
+      margin-bottom: $spacer*1.5;
     }
-    @include media-breakpoint-up(md) {
-        .container {
-            padding: 0 $grid-gutter-width;
+  }
+
+  @include media-breakpoint-down(sm) {
+    .banner-row {
+      margin: 0;
+      min-width: 100%;
+
+      .banner-image {
+        width: 100%;
+
+        .img-fluid {
+          width: 100%;
         }
+      }
     }
+  }
+
+  @include media-breakpoint-up(md) {
+    .container {
+      padding: 0 $grid-gutter-width;
+    }
+  }
 }
+
 hr {
-    margin-bottom: $grid-gutter-width;
+  margin-bottom: $grid-gutter-width;
 }
+
 .message {
-    @extend .alert;
-    &.good {
-        @extend .alert-success;
-    }
-    &.bad,
-    &.error {
-        @extend .alert-danger;
-    }
-    &.info {
-        @extend .alert-info;
-    }
-    &.warning {
-        @extend .alert-warning;
-    }
+  @extend .alert;
+
+  &.good {
+    @extend .alert-success;
+  }
+
+  &.bad,
+  &.error {
+    @extend .alert-danger;
+  }
+
+  &.info {
+    @extend .alert-info;
+  }
+
+  &.warning {
+    @extend .alert-warning;
+  }
 }

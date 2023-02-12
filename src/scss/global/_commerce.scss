@@ -3,34 +3,38 @@
  *
  */
 .shoppingcart-button {
-    .shoppingcart-summary {
-        left: auto;
-        right: 0;
-        min-width: $dropdown-min-width*3;
-        padding: 0;
+  .shoppingcart-summary {
+    left: auto;
+    right: 0;
+    min-width: $dropdown-min-width*3;
+    padding: 0;
 
-        .shoppingcart-items {
-            padding: $grid-gutter-width;
-            .row {
-                margin-left: 0;
-                margin-right: 0;
-            }
-            a {
-                color: $link-color;
-            }
-        }
+    .shoppingcart-items {
+      padding: $grid-gutter-width;
+
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      a {
+        color: $link-color;
+      }
     }
+  }
 }
 
 #Form_PaymentForm {
-    #Expiry .fieldgroup {
-        @extend .row;
-        @extend .mb-3;
-        .fieldgroup-field {
-            @extend .col;
-            label {
-                @extend .sr-only;
-            }
-        }
+  #Expiry .fieldgroup {
+    @extend .row;
+    @extend .mb-3;
+
+    .fieldgroup-field {
+      @extend .col;
+
+      label {
+        @extend .sr-only;
+      }
     }
+  }
 }
