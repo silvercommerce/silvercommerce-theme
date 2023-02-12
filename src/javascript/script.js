@@ -16,13 +16,9 @@
 
       mainImage.css('opacity', 0.5)
 
-      alert(url);
-
       image.attr('src', url).on(
         'load',
         () => {
-          alert(url);
-
           mainImage
             .trigger('zoom.destroy')
             .attr('data-link', zoomURL)
