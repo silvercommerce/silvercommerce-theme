@@ -1,11 +1,19 @@
-<% if $Menu(2) || $SideBarView.Widgets || $AllTags.Exists %>
-	<% include SideBar %>
-<% end_if %>
-	
 <div class="col-sm commerce-category" role="main">
 	<article class="content">
 		$Content
 	</article>
+
+	<div class="row">
+		<div class="col-auto">
+			<% include CategoryDropdown %>
+		</div>
+		<div class="col-auto">
+			<% include TagDropdown %>
+		</div>
+        <div class="col-auto ml-auto">
+			$SortLimitForm
+		</div>
+	</div>
 
 	<% if $PaginatedAllProducts(24).exists %>
 		<div class="row">
