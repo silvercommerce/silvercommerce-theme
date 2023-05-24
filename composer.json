@@ -12,14 +12,17 @@
         {
             "name": "Morven Lewis-Everley",
             "homepage": "http://www.ilateral.co.uk"
-        },
-        {
-            "name": "Mark Anderson (ilateral)",
-            "homepage": "http://www.ilateral.co.uk"
         }
     ],
     "extra": {
-        "installer-name": "silvercommerce"
+        "installer-name": "silvercommerce",
+        "expose": [
+            "css",
+            "javascript",
+            "images",
+            "icons",
+            "fonts"
+        ]
     },
     "require": {
         "composer/installers": "*",
