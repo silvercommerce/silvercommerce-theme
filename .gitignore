@@ -1,8 +1,10 @@
-webfonts/.DS_Store
-fonts/.DS_Store
-images/.DS_Store
-css/.DS_Store
-.sass-cache
+.DS_Store
 npm-debug.log
 yarn-error.log
-/node_modules
+/vendor/*
+.sass-cache/*
+/node_modules/
+**/*.js.map
+**/*.css.map
+.yarn/*
+.pnp.*

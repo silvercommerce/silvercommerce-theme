@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "SilverStripe Theme for SilverCommerce using Bootstrap 4",
   "devDependencies": {
+    "@babel/core": "^7.28.4",
     "@fortawesome/fontawesome-free": "^5.12.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -20,12 +21,13 @@
     "expose-loader": "^4.0.0",
     "imagesloaded": "^5.0.0",
     "jquery": "^3.5.0",
-    "jquery-zoom": "^1.7.20",
+    "js-image-zoom": "^0.7.0",
     "mini-css-extract-plugin": "^2.6.1",
-    "node-sass": "^7.0.0",
     "popper.js": "^1.15.0",
+    "postcss": "^8.5.6",
     "postcss-loader": "^7.0.1",
     "postcss-scss": "^4.0.4",
+    "sass": "^1.92.1",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",
     "stylelint": "^14.1.0",
@@ -55,5 +57,8 @@
   "bugs": {
     "url": "https://github.com/silvercommerce/silvercommerce-theme/issues"
   },
-  "homepage": "https://github.com/silvercommerce/silvercommerce-theme"
+  "homepage": "https://github.com/silvercommerce/silvercommerce-theme",
+  "dependencies": {
+    "corepack": "^0.33.0"
+  }
 }

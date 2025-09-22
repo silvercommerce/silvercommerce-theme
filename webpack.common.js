@@ -16,7 +16,7 @@ module.exports = {
             `${PATHS.MODULES}/tether/dist/js/tether.js`,
             `${PATHS.MODULES}/bootstrap/dist/js/bootstrap.js`,
             `${PATHS.MODULES}/imagesloaded/imagesloaded.js`,
-            `${PATHS.MODULES}/jquery-zoom/jquery.zoom.js`,
+            `${PATHS.MODULES}/js-image-zoom/js-image-zoom.js`,
             `${PATHS.MODULES}/@fortawesome/fontawesome-free/js/all.js`,
             `${PATHS.SRC}/javascript/script.js`
         ],

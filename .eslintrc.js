@@ -1,6 +1,6 @@
 module.exports = {
     root: true,
-    ignorePatterns: ['dist', 'node_modules'],
+    ignorePatterns: ['css', 'javascript', 'node_modules'],
     rules: {
       'no-param-reassign': 0,
       'max-len': [
