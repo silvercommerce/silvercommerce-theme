@@ -1,37 +1,44 @@
+import ImageZoom from 'js-image-zoom'
+
 (function ($) {
-  const mainImage = $('.commerce-product .product-main-image')
+  const mainImage = document
+    .querySelector('.commerce-product .product-main-image')
 
-  mainImage.zoom({
-    url: mainImage.attr('data-link'),
-    on: 'mouseover',
-  })
+  if (document.body.contains(mainImage)) {
+    mainImage
+      .querySelector('img')
+      .style
+      .display = 'none'
 
-  $('.commerce-product .product-thumbs img').on(
-    'click',
-    (e) => {
-      const thumb = e.target
-      const url = thumb.dataset.image
-      const zoomURL = thumb.dataset.zoom
-      const image = $('.commerce-product .product-main-image img')
+    const options = {
+      img: mainImage.dataset.link,
+      width: mainImage.clientWidth,
+      height: mainImage.clientHeight,
+      offset: { vertical: 0, horizontal: 10 },
+      zoomPosition: 'original',
+    }
 
-      mainImage.css('opacity', 0.5)
+    window.imageZoom = new ImageZoom(mainImage, options)
 
-      image.attr('src', url).on(
-        'load',
-        () => {
-          mainImage
-            .trigger('zoom.destroy')
-            .attr('data-link', zoomURL)
-            .zoom({
-              url: zoomURL,
-              on: 'mouseover',
-            })
+    document
+      .querySelectorAll('.commerce-product .product-thumbs img')
+      .forEach((thumb) => {
+        thumb.addEventListener('click', () => {
+          const url = thumb.dataset.image
+          const zoomURL = thumb.dataset.zoom
+          const image = mainImage.querySelector('img')
 
-          mainImage.css('opacity', 1)
-        },
-      )
-    },
-  )
+          mainImage.style.opacity = 0.5
+          image.src = url
+          image.onload = () => {
+            options.img = zoomURL
+            window.imageZoom.kill()
+            window.imageZoom = new ImageZoom(mainImage, options)
+            mainImage.style.opacity = 1
+          }
+        })
+      })
+  }
 
   $('#Form_PaymentForm').submit((e) => {
     const form = $(this)
@@ -45,7 +52,7 @@
     if (form.hasClass('disabled')) {
       e.preventdefault()
     } else {
-      form.addClass('diabled')
+      form.addClass('disabled')
     }
   })
 }(jQuery))
